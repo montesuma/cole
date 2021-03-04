@@ -93,7 +93,7 @@ func main() {
 
 	// Server Lifecycle
 	s := &http.Server{
-		Addr:         ":8080",
+		Addr:         conf.ListenAddr,
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 10 * time.Second,
 	}

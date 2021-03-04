@@ -8,6 +8,7 @@ import (
 )
 
 type Conf struct {
+  ListenAddr       string `env:"LISTEN_ADDR" envDefault:":8080"`
 	SenderType       string `env:"SENDER_TYPE,required"`
 	Interval         int    `env:"INTERVAL" envDefault:"65"`
 	HTTPEndpoint     string `env:"HTTP_ENDPOINT"`
